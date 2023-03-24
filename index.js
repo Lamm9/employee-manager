@@ -174,7 +174,7 @@ const updateRole = async () => {
             }
         })
         const answers = await getAnswer(updateQ(formattedEmployees,formattedRoles))
-        const [employee, fields] = await connection.execute(`UPDATE employees SET role_id = ${answers.newRole} WHERE first_name = "${answers.firstName}", last_name = "${answers.lastName}"`)
+        const [employee, fields] = await connection.execute(`UPDATE employees SET role_id = ${answers.newRole} WHERE id = ${answers.employee}`)
         console.table(answers)
         app()
     } catch (error) {
