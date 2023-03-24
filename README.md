@@ -18,7 +18,7 @@ This application is intended to be run in the command line on the user's machine
 
 ## Installation
 
-After cloning this repo to your local machine, simply run `npm i` in the terminal, then `node index` to start.
+After cloning this repo to your local machine, simply run `npm i` in the terminal, log into MySQL, and seed the database by running `SOURCE db/schema.sql;` followed by `SOURCE db/seeds.sql;` then `node index` to start.
 
 ## Credits
 
